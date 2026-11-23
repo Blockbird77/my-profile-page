@@ -233,6 +233,32 @@ section{
         justify-content: center;
     }
 }
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.social-btn{
+    display: inline-block;
+    padding: 0.55rem 1.2rem;
+    border-radius: 6px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-colour 0.2s, colour 0.2s;
+}
+.social-btn:hover:not(.social-placeholder){
+    background-color: var(--accent);
+    color: #ffffff;
+}
+.social-placeholder{
+    border-color: var(--border-colour);
+    color: var(--text-muted);
+    cursor: default;
+}
 /* Grid (Project Section) */
 .projects-section h2{
     text-align: center;
